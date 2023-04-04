@@ -1,0 +1,51 @@
+Tue, 04 Apr 2023 03:56:02 +0000
+get app://self/?year=2001&month=1&day=1
+
+BEAR\Resource\Exception\ResourceNotFoundException(app://self/index)
+ in file /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/AppAdapter.php on line 61
+
+#0 /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/AppAdapter.php(50): BEAR\Resource\AppAdapter->getNotFound(Object(BEAR\Resource\Uri), Object(Ray\Di\Exception\Unbound), 'MyVendor\\Weekda...')
+#1 /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/Factory.php(42): BEAR\Resource\AppAdapter->get(Object(BEAR\Resource\Uri))
+#2 /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/Resource.php(60): BEAR\Resource\Factory->newInstance(Object(BEAR\Resource\Uri))
+#3 /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/Resource.php(80): BEAR\Resource\Resource->newInstance(Object(BEAR\Resource\Uri))
+#4 /Users/tatsuo/MyVendor.Weekday/src/Bootstrap.php(41): BEAR\Resource\Resource->uri('app://self/')
+#5 /Users/tatsuo/MyVendor.Weekday/bin/app.php(8): MyVendor\Weekday\Bootstrap->__invoke('hal-api-app', Array, Array)
+#6 {main}
+
+PHP Variables
+
+$_SERVER => Array
+(
+    [DOCUMENT_ROOT] => /Users/tatsuo/MyVendor.Weekday
+    [REMOTE_ADDR] => 127.0.0.1
+    [REMOTE_PORT] => 53538
+    [SERVER_SOFTWARE] => PHP 8.1.17 Development Server
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [SERVER_NAME] => 127.0.0.1
+    [SERVER_PORT] => 8080
+    [REQUEST_URI] => /?year=2001&month=1&day=1
+    [REQUEST_METHOD] => GET
+    [SCRIPT_NAME] => /
+    [SCRIPT_FILENAME] => bin/app.php
+    [PHP_SELF] => /
+    [QUERY_STRING] => year=2001&month=1&day=1
+    [HTTP_HOST] => 127.0.0.1:8080
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_CACHE_CONTROL] => max-age=0
+    [HTTP_SEC_CH_UA] => "Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"
+    [HTTP_SEC_CH_UA_MOBILE] => ?0
+    [HTTP_SEC_CH_UA_PLATFORM] => "macOS"
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    [HTTP_SEC_FETCH_SITE] => cross-site
+    [HTTP_SEC_FETCH_MODE] => navigate
+    [HTTP_SEC_FETCH_USER] => ?1
+    [HTTP_SEC_FETCH_DEST] => document
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja-JP,ja;q=0.9,en-US;q=0.8,en;q=0.7
+    [REQUEST_TIME_FLOAT] => 1680580562.6617
+    [REQUEST_TIME] => 1680580562
+)
+
+

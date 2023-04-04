@@ -11,7 +11,9 @@
         "bear/package": "^1.12.1",
         "bear/resource": "^1.16",
         "bear/sunday": "^1.5",
+        "madapaja/twig-module": "^2.0",
         "ray/aop": "^2.11",
+        "ray/cake-database-module": "^1.0",
         "ray/di": "^2.13"
     },
     "require-dev": {

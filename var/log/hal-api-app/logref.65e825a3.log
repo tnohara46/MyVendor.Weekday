@@ -1,0 +1,48 @@
+Tue, 04 Apr 2023 04:22:00 +0000
+get app://self/favicon.ico
+
+BEAR\Resource\Exception\ResourceNotFoundException(app://self/favicon.ico)
+ in file /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/AppAdapter.php on line 61
+
+#0 /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/AppAdapter.php(50): BEAR\Resource\AppAdapter->getNotFound(Object(BEAR\Resource\Uri), Object(Ray\Di\Exception\Unbound), 'MyVendor\\Weekda...')
+#1 /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/Factory.php(42): BEAR\Resource\AppAdapter->get(Object(BEAR\Resource\Uri))
+#2 /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/Resource.php(60): BEAR\Resource\Factory->newInstance(Object(BEAR\Resource\Uri))
+#3 /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/Resource.php(80): BEAR\Resource\Resource->newInstance(Object(BEAR\Resource\Uri))
+#4 /Users/tatsuo/MyVendor.Weekday/src/Bootstrap.php(41): BEAR\Resource\Resource->uri('app://self/favi...')
+#5 /Users/tatsuo/MyVendor.Weekday/bin/app.php(8): MyVendor\Weekday\Bootstrap->__invoke('hal-api-app', Array, Array)
+#6 {main}
+
+PHP Variables
+
+$_SERVER => Array
+(
+    [DOCUMENT_ROOT] => /Users/tatsuo/MyVendor.Weekday
+    [REMOTE_ADDR] => 127.0.0.1
+    [REMOTE_PORT] => 53644
+    [SERVER_SOFTWARE] => PHP 8.1.17 Development Server
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [SERVER_NAME] => 127.0.0.1
+    [SERVER_PORT] => 8081
+    [REQUEST_URI] => /favicon.ico
+    [REQUEST_METHOD] => GET
+    [SCRIPT_NAME] => /favicon.ico
+    [SCRIPT_FILENAME] => bin/app.php
+    [PHP_SELF] => /favicon.ico
+    [HTTP_HOST] => 127.0.0.1:8081
+    [HTTP_CONNECTION] => keep-alive
+    [HTTP_SEC_CH_UA] => "Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"
+    [HTTP_SEC_CH_UA_MOBILE] => ?0
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
+    [HTTP_SEC_CH_UA_PLATFORM] => "macOS"
+    [HTTP_ACCEPT] => image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+    [HTTP_SEC_FETCH_SITE] => same-origin
+    [HTTP_SEC_FETCH_MODE] => no-cors
+    [HTTP_SEC_FETCH_DEST] => image
+    [HTTP_REFERER] => http://127.0.0.1:8081/todos?id=1
+    [HTTP_ACCEPT_ENCODING] => gzip, deflate, br
+    [HTTP_ACCEPT_LANGUAGE] => ja-JP,ja;q=0.9,en-US;q=0.8,en;q=0.7
+    [REQUEST_TIME_FLOAT] => 1680582120.7785
+    [REQUEST_TIME] => 1680582120
+)
+
+

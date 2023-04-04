@@ -15,14 +15,16 @@ class ComposerStaticInit3fc877c7c1109a1d798bb25a7ebec704
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
         '0dc2d59380c105904fe0a8d4c0a1afc5' => __DIR__ . '/..' . '/bear/resource/src-files/uri_template.php',
+        '948ad5488880985ff1c06721a4e447fe' => __DIR__ . '/..' . '/cakephp/utility/bootstrap.php',
+        '72142d7b40a3a0b14e91825290b5ad82' => __DIR__ . '/..' . '/cakephp/core/functions.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'f94e61bace66fd80544d5a94b3c03e76' => __DIR__ . '/..' . '/koriym/app-state-diagram/vendor-xml2json/xml2json.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
@@ -37,6 +39,10 @@ class ComposerStaticInit3fc877c7c1109a1d798bb25a7ebec704
         'W' => 
         array (
             'Webmozart\\Assert\\' => 17,
+        ),
+        'T' => 
+        array (
+            'Twig\\' => 5,
         ),
         'S' => 
         array (
@@ -66,6 +72,7 @@ class ComposerStaticInit3fc877c7c1109a1d798bb25a7ebec704
             'Ray\\ObjectGrapher\\' => 18,
             'Ray\\Di\\' => 7,
             'Ray\\Compiler\\' => 13,
+            'Ray\\CakeDbModule\\' => 17,
             'Ray\\Aop\\' => 8,
         ),
         'P' => 
@@ -90,6 +97,7 @@ class ComposerStaticInit3fc877c7c1109a1d798bb25a7ebec704
             'MyVendor\\Weekday\\' => 17,
             'Monolog\\' => 8,
             'Michelf\\' => 8,
+            'Madapaja\\TwigModule\\' => 20,
         ),
         'K' => 
         array (
@@ -133,6 +141,14 @@ class ComposerStaticInit3fc877c7c1109a1d798bb25a7ebec704
             'Doctrine\\Common\\Annotations\\' => 28,
             'DeepCopy\\' => 9,
         ),
+        'C' => 
+        array (
+            'Cake\\Utility\\' => 13,
+            'Cake\\Datasource\\' => 16,
+            'Cake\\Database\\' => 14,
+            'Cake\\Core\\' => 10,
+            'Cake\\Cache\\' => 11,
+        ),
         'B' => 
         array (
             'Bamarni\\Composer\\Bin\\' => 21,
@@ -166,6 +182,10 @@ class ComposerStaticInit3fc877c7c1109a1d798bb25a7ebec704
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/twig/src',
         ),
         'Symfony\\Polyfill\\Php81\\' => 
         array (
@@ -261,6 +281,10 @@ class ComposerStaticInit3fc877c7c1109a1d798bb25a7ebec704
         array (
             0 => __DIR__ . '/..' . '/ray/compiler/src',
         ),
+        'Ray\\CakeDbModule\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ray/cake-database-module/src',
+        ),
         'Ray\\Aop\\' => 
         array (
             0 => __DIR__ . '/..' . '/ray/aop/src',
@@ -279,8 +303,8 @@ class ComposerStaticInit3fc877c7c1109a1d798bb25a7ebec704
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Container\\' => 
         array (
@@ -322,6 +346,10 @@ class ComposerStaticInit3fc877c7c1109a1d798bb25a7ebec704
         'Michelf\\' => 
         array (
             0 => __DIR__ . '/..' . '/michelf/php-markdown/Michelf',
+        ),
+        'Madapaja\\TwigModule\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/madapaja/twig-module/src',
         ),
         'Koriym\\XmlLoader\\' => 
         array (
@@ -419,6 +447,26 @@ class ComposerStaticInit3fc877c7c1109a1d798bb25a7ebec704
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
+        'Cake\\Utility\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cakephp/utility',
+        ),
+        'Cake\\Datasource\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cakephp/datasource',
+        ),
+        'Cake\\Database\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cakephp/database',
+        ),
+        'Cake\\Core\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cakephp/core',
+        ),
+        'Cake\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cakephp/cache',
+        ),
         'Bamarni\\Composer\\Bin\\' => 
         array (
             0 => __DIR__ . '/..' . '/bamarni/composer-bin-plugin/src',
@@ -450,9 +498,9 @@ class ComposerStaticInit3fc877c7c1109a1d798bb25a7ebec704
         ),
         'BEAR\\Package\\' => 
         array (
-            0 => __DIR__ . '/..' . '/bear/package/src',
-            1 => __DIR__ . '/..' . '/bear/package/src-deprecated',
-            2 => __DIR__ . '/..' . '/bear/aura-router-module/src',
+            0 => __DIR__ . '/..' . '/bear/aura-router-module/src',
+            1 => __DIR__ . '/..' . '/bear/package/src',
+            2 => __DIR__ . '/..' . '/bear/package/src-deprecated',
         ),
         'BEAR\\Dotenv\\' => 
         array (

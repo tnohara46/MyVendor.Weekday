@@ -12,6 +12,7 @@ use MyVendor\Weekday\MyLogger;
 use MyVendor\Weekday\MyLoggerInterface;
 use MyVendor\Weekday\Annotation\BenchMark;
 use MyVendor\Weekday\Interceptor\BenchMarker;
+use Ray\CakeDbModule\CakeDbModule; // add this line
 
 use function dirname;
 
@@ -28,6 +29,14 @@ class AppModule extends AbstractAppModule
             $this->matcher->annotatedWith(BenchMark::class), // #[Attribute]と属性の付けられたメソッドに
             [BenchMarker::class]                             // BenchMarkerインターセプターを適用
         );
+        $this->install(new PackageModule());
+
+        // CakeDB
+        $dbConfig = [
+            'driver' => 'Cake\Database\Driver\Sqlite',
+            'database' => $appDir . '/var/db/todo.sqlite3'
+        ];
+        $this->install(new CakeDbModule($dbConfig));
         $this->install(new PackageModule());
     }
 }

@@ -1,0 +1,68 @@
+Tue, 04 Apr 2023 04:20:44 +0000
+post app://self/todos?todo=shopping
+
+BEAR\Resource\Exception\ResourceNotFoundException(app://self/todos)
+ in file /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/AppAdapter.php on line 61
+
+#0 /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/AppAdapter.php(50): BEAR\Resource\AppAdapter->getNotFound(Object(BEAR\Resource\Uri), Object(Ray\Compiler\Exception\Unbound), 'MyVendor\\Weekda...')
+#1 /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/Factory.php(42): BEAR\Resource\AppAdapter->get(Object(BEAR\Resource\Uri))
+#2 /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/Resource.php(60): BEAR\Resource\Factory->newInstance(Object(BEAR\Resource\Uri))
+#3 /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/Resource.php(80): BEAR\Resource\Resource->newInstance(Object(BEAR\Resource\Uri))
+#4 /Users/tatsuo/MyVendor.Weekday/src/Bootstrap.php(41): BEAR\Resource\Resource->uri('app://self/todo...')
+#5 /Users/tatsuo/MyVendor.Weekday/bin/test.php(6): MyVendor\Weekday\Bootstrap->__invoke('cli-prod-hal-ap...', Array, Array)
+#6 {main}
+
+PHP Variables
+
+$_SERVER => Array
+(
+    [MANPATH] => /opt/homebrew/share/man::
+    [TERM_PROGRAM] => Apple_Terminal
+    [PYENV_ROOT] => /Users/tatsuo/.pyenv
+    [SHELL] => /bin/zsh
+    [TERM] => xterm-256color
+    [HOMEBREW_REPOSITORY] => /opt/homebrew
+    [TMPDIR] => /var/folders/0r/lvwfww4x7md10p83zqm2nxtw0000gn/T/
+    [TERM_PROGRAM_VERSION] => 447
+    [VOLTA_HOME] => /Users/tatsuo/.volta
+    [TERM_SESSION_ID] => 257AF4B6-32D1-427E-9DDF-08508CFED52A
+    [USER] => tatsuo
+    [PHPENV_DIR] => /Users/tatsuo/MyVendor.Weekday/bin
+    [PHPENV_HOOK_PATH] => :/Users/tatsuo/.phpenv/phpenv.d:/usr/local/etc/phpenv.d:/etc/phpenv.d:/usr/lib/phpenv/hooks:/Users/tatsuo/.phpenv/plugins/phpenv-aliases/etc/phpenv.d:/Users/tatsuo/.phpenv/plugins/phpenv-composer/etc/phpenv.d
+    [SSH_AUTH_SOCK] => /private/tmp/com.apple.launchd.GQUa7sGpod/Listeners
+    [PATH] => /Users/tatsuo/.phpenv/versions/8.1/bin:/Users/tatsuo/.phpenv/libexec:/Users/tatsuo/.phpenv/plugins/php-build/bin:/Users/tatsuo/.phpenv/plugins/phpenv-aliases/bin:/Users/tatsuo/.phpenv/plugins/phpenv-man/bin:/Users/tatsuo/.pyenv/shims:/Users/tatsuo/.pyenv/bin:/Users/tatsuo/.volta/bin:/Users/tatsuo/.phpenv/shims:/Users/tatsuo/.phpenv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/tatsuo/.volta/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin
+    [LaunchInstanceID] => FE9D6CB8-9079-41A6-B873-2EFA69716488
+    [__CFBundleIdentifier] => com.apple.Terminal
+    [PWD] => /Users/tatsuo/MyVendor.Weekday
+    [LANG] => ja_JP.UTF-8
+    [XPC_FLAGS] => 0x0
+    [XPC_SERVICE_NAME] => 0
+    [PHPENV_VERSION] => 8.1
+    [PYENV_SHELL] => zsh
+    [SHLVL] => 1
+    [HOME] => /Users/tatsuo
+    [PHPENV_ROOT] => /Users/tatsuo/.phpenv
+    [HOMEBREW_PREFIX] => /opt/homebrew
+    [LOGNAME] => tatsuo
+    [INFOPATH] => /opt/homebrew/share/info:
+    [HOMEBREW_CELLAR] => /opt/homebrew/Cellar
+    [SECURITYSESSIONID] => 186b3
+    [__CF_USER_TEXT_ENCODING] => 0x1F5:0x1:0xE
+    [PHP_SELF] => bin/test.php
+    [SCRIPT_NAME] => bin/test.php
+    [SCRIPT_FILENAME] => bin/test.php
+    [PATH_TRANSLATED] => bin/test.php
+    [DOCUMENT_ROOT] => 
+    [REQUEST_TIME_FLOAT] => 1680582044.1847
+    [REQUEST_TIME] => 1680582044
+    [argv] => Array
+        (
+            [0] => bin/test.php
+            [1] => post
+            [2] => /todos?todo=shopping
+        )
+
+    [argc] => 3
+)
+
+

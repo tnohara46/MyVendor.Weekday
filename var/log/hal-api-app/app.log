@@ -1,3 +1,8 @@
 [2023-04-03T06:20:27.479746+00:00] DEBUG: req:"post app://self/weekday" code:405 e:BEAR\Resource\Exception\MethodNotAllowedException(MyVendor\Weekday\Resource\App\Weekday::{(post}()) logref:49cac043 []
 [2023-04-03T07:52:56.649446+00:00] DEBUG: req:"post app://self/weekday" code:405 e:BEAR\Resource\Exception\MethodNotAllowedException(MyVendor\Weekday\Resource\App\Weekday::{(post}()) logref:49cac043 []
 [2023-04-03T07:53:15.654351+00:00] DEBUG: req:"post app://self/weekday" code:405 e:BEAR\Resource\Exception\MethodNotAllowedException(MyVendor\Weekday\Resource\App\Weekday::{(post}()) logref:49cac043 []
+[2023-04-04T03:55:36.807039+00:00] DEBUG: req:"get app://self/?year=2001&month=1&day=1" code:404 e:BEAR\Resource\Exception\ResourceNotFoundException(app://self/index) logref:435bb86a []
+[2023-04-04T03:55:36.933570+00:00] DEBUG: req:"get app://self/favicon.ico" code:404 e:BEAR\Resource\Exception\ResourceNotFoundException(app://self/favicon.ico) logref:65e825a3 []
+[2023-04-04T03:56:00.953016+00:00] DEBUG: req:"get app://self/?year=2001&month=1&day=1" code:404 e:BEAR\Resource\Exception\ResourceNotFoundException(app://self/index) logref:435bb86a []
+[2023-04-04T03:56:02.673041+00:00] DEBUG: req:"get app://self/?year=2001&month=1&day=1" code:404 e:BEAR\Resource\Exception\ResourceNotFoundException(app://self/index) logref:435bb86a []
+[2023-04-04T04:22:00.802627+00:00] DEBUG: req:"get app://self/favicon.ico" code:404 e:BEAR\Resource\Exception\ResourceNotFoundException(app://self/favicon.ico) logref:65e825a3 []
