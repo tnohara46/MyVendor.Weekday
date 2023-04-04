@@ -1,0 +1,64 @@
+Mon, 03 Apr 2023 06:34:14 +0000
+get app://self/weekday?year=-1&month=1&day=1
+
+ErrorException(assert($dateTime instanceof DateTimeImmutable))
+ in file /Users/tatsuo/MyVendor.Weekday/src/Resource/App/Weekday.php on line 15
+
+#0 /Users/tatsuo/MyVendor.Weekday/src/Bootstrap.php(47): BEAR\Sunday\Provide\Error\ThrowableHandler->handle(Object(AssertionError), Object(BEAR\Sunday\Extension\Router\RouterMatch))
+#1 /Users/tatsuo/MyVendor.Weekday/bin/app.php(8): MyVendor\Weekday\Bootstrap->__invoke('cli-hal-api-app', Array, Array)
+#2 {main}
+
+PHP Variables
+
+$_SERVER => Array
+(
+    [MANPATH] => /opt/homebrew/share/man::
+    [TERM_PROGRAM] => Apple_Terminal
+    [PYENV_ROOT] => /Users/tatsuo/.pyenv
+    [SHELL] => /bin/zsh
+    [TERM] => xterm-256color
+    [HOMEBREW_REPOSITORY] => /opt/homebrew
+    [TMPDIR] => /var/folders/0r/lvwfww4x7md10p83zqm2nxtw0000gn/T/
+    [TERM_PROGRAM_VERSION] => 447
+    [VOLTA_HOME] => /Users/tatsuo/.volta
+    [TERM_SESSION_ID] => 257AF4B6-32D1-427E-9DDF-08508CFED52A
+    [USER] => tatsuo
+    [PHPENV_DIR] => /Users/tatsuo/MyVendor.Weekday/bin
+    [PHPENV_HOOK_PATH] => :/Users/tatsuo/.phpenv/phpenv.d:/usr/local/etc/phpenv.d:/etc/phpenv.d:/usr/lib/phpenv/hooks:/Users/tatsuo/.phpenv/plugins/phpenv-aliases/etc/phpenv.d:/Users/tatsuo/.phpenv/plugins/phpenv-composer/etc/phpenv.d
+    [SSH_AUTH_SOCK] => /private/tmp/com.apple.launchd.GQUa7sGpod/Listeners
+    [PATH] => /Users/tatsuo/.phpenv/versions/8.1/bin:/Users/tatsuo/.phpenv/libexec:/Users/tatsuo/.phpenv/plugins/php-build/bin:/Users/tatsuo/.phpenv/plugins/phpenv-aliases/bin:/Users/tatsuo/.phpenv/plugins/phpenv-man/bin:/Users/tatsuo/.pyenv/shims:/Users/tatsuo/.pyenv/bin:/Users/tatsuo/.volta/bin:/Users/tatsuo/.phpenv/shims:/Users/tatsuo/.phpenv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/tatsuo/.volta/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin
+    [LaunchInstanceID] => FE9D6CB8-9079-41A6-B873-2EFA69716488
+    [__CFBundleIdentifier] => com.apple.Terminal
+    [PWD] => /Users/tatsuo/MyVendor.Weekday
+    [LANG] => ja_JP.UTF-8
+    [XPC_FLAGS] => 0x0
+    [XPC_SERVICE_NAME] => 0
+    [PHPENV_VERSION] => 8.1
+    [PYENV_SHELL] => zsh
+    [SHLVL] => 1
+    [HOME] => /Users/tatsuo
+    [PHPENV_ROOT] => /Users/tatsuo/.phpenv
+    [HOMEBREW_PREFIX] => /opt/homebrew
+    [LOGNAME] => tatsuo
+    [INFOPATH] => /opt/homebrew/share/info:
+    [HOMEBREW_CELLAR] => /opt/homebrew/Cellar
+    [SECURITYSESSIONID] => 186b3
+    [__CF_USER_TEXT_ENCODING] => 0x1F5:0x1:0xE
+    [PHP_SELF] => bin/app.php
+    [SCRIPT_NAME] => bin/app.php
+    [SCRIPT_FILENAME] => bin/app.php
+    [PATH_TRANSLATED] => bin/app.php
+    [DOCUMENT_ROOT] => 
+    [REQUEST_TIME_FLOAT] => 1680503654.2599
+    [REQUEST_TIME] => 1680503654
+    [argv] => Array
+        (
+            [0] => bin/app.php
+            [1] => get
+            [2] => /weekday?year=-1&month=1&day=1
+        )
+
+    [argc] => 3
+)
+
+

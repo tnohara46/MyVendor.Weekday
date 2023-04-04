@@ -1,0 +1,30 @@
+{
+    "name": "koriym/psr4list",
+    "description":"Returns the name of the classes in PSR4 path",
+    "keywords":[
+        "PSR4"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Akihito Koriyama",
+            "email": "akihito.koriyama@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload":{
+        "psr-4":{
+            "Koriym\\Psr4List\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FakeVendor\\FakePackage\\": "tests/Fake/src"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0 || ^7.0 || ^9.5"
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "symbol-whitelist" : [
+    "null", "true", "false",
+    "static", "self", "parent",
+    "array", "string", "int", "float", "bool", "iterable", "callable", "void", "object", "mixed",
+    "Doctrine\\Common\\Cache\\ArrayCache", "Doctrine\\Common\\Cache\\Cache",
+    "json_decode", "JSON_ERROR_NONE", "json_last_error", "json_last_error_msg"
+  ],
+  "php-core-extensions" : [
+    "Core",
+    "date",
+    "pcre",
+    "Phar",
+    "Reflection",
+    "SPL",
+    "standard"
+  ],
+  "scan-files" : []
+}

@@ -1,0 +1,5 @@
+[2023-04-03T06:18:18.165081+00:00] DEBUG: req:"get app://self/weekday" code:400 e:BEAR\Resource\Exception\ParameterException(year) logref:8ec47b85 []
+[2023-04-03T06:29:54.079125+00:00] DEBUG: req:"get app://self/weekday?year=-1&month=1&day=1" code:0 e:ErrorException(Call to a member function format() on bool) logref:f03adb86 []
+[2023-04-03T06:34:14.321725+00:00] DEBUG: req:"get app://self/weekday?year=-1&month=1&day=1" code:1 e:ErrorException(assert($dateTime instanceof DateTimeImmutable)) logref:82a83f7a []
+[2023-04-04T01:22:20.990545+00:00] DEBUG: req:"get app://self/weekday?year=2011&month=05&day=23" code:0 e:Ray\Di\Exception\Unbound(dependency 'MyVendor\Weekday\Resource\App\MyLoggerInterface' with name '' used in /Users/tatsuo/MyVendor.Weekday/src/Resource/App/Weekday.php:13 ($logger)) logref:539d184d []
+[2023-04-04T01:24:51.466671+00:00] DEBUG: req:"get app://self/weekday?year=2011&month=05&day=23" code:0 e:Ray\Di\Exception\Unbound(dependency 'MyVendor\Weekday\Resource\App\MyLoggerInterface' with name '' used in /Users/tatsuo/MyVendor.Weekday/src/Resource/App/Weekday.php:13 ($logger)) logref:539d184d []

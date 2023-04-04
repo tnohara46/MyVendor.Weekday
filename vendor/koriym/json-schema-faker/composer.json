@@ -1,0 +1,51 @@
+{
+    "name": "koriym/json-schema-faker",
+    "description": "Generates fake JSON with JSON schema",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Leko",
+            "email": "leko.noor@gmail.com"
+        },
+        {
+            "name": "Akhito Koriyama",
+            "email": "akihito.koriyama@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "fakerphp/faker": "^1.13"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.17",
+        "justinrainbow/json-schema": "^5.2.8",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "JSONSchemaFaker\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JSONSchemaFaker\\Test\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "phpunit tests/ --coverage-clover=clover.xml --whitelist=src"
+        ],
+        "cs": [
+            "./vendor/bin/php-cs-fixer fix -v --dry-run"
+        ],
+        "cs-fix": [
+            "./vendor/bin/php-cs-fixer fix -v"
+        ]
+    },
+    "bin": [
+        "bin/fakejsons"
+    ]
+}

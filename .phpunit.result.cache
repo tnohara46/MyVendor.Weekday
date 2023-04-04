@@ -1,0 +1,1 @@
+{"version":1,"defects":[],"times":{"MyVendor\\Weekday\\Resource\\Page\\IndexTest::testOnGet":0.09,"MyVendor\\Weekday\\Hypermedia\\WorkflowTest::testIndex":0,"MyVendor\\Weekday\\Http\\WorkflowTest::testIndex":0.144,"MyVendor\\Weekday\\Resource\\App\\WeekdayTest::testInvalidDateTime":0.079}}

@@ -1,0 +1,37 @@
+Mon, 03 Apr 2023 07:53:15 +0000
+post app://self/weekday
+
+BEAR\Resource\Exception\MethodNotAllowedException(MyVendor\Weekday\Resource\App\Weekday::{(post}())
+ in file /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/ExtraMethodInvoker.php on line 36
+
+#0 /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/Invoker.php(33): BEAR\Resource\ExtraMethodInvoker->__invoke(Object(BEAR\Resource\Request), Object(BEAR\Resource\Invoker))
+#1 /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/AbstractRequest.php(137): BEAR\Resource\Invoker->invoke(Object(BEAR\Resource\Request))
+#2 /Users/tatsuo/MyVendor.Weekday/src/Bootstrap.php(41): BEAR\Resource\AbstractRequest->__invoke(Array)
+#3 /Users/tatsuo/MyVendor.Weekday/bin/app.php(8): MyVendor\Weekday\Bootstrap->__invoke('hal-api-app', Array, Array)
+#4 {main}
+
+PHP Variables
+
+$_SERVER => Array
+(
+    [DOCUMENT_ROOT] => /Users/tatsuo/MyVendor.Weekday
+    [REMOTE_ADDR] => 127.0.0.1
+    [REMOTE_PORT] => 50349
+    [SERVER_SOFTWARE] => PHP 8.1.17 Development Server
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [SERVER_NAME] => 127.0.0.1
+    [SERVER_PORT] => 8080
+    [REQUEST_URI] => /weekday?year=-2&month=1&day=1
+    [REQUEST_METHOD] => POST
+    [SCRIPT_NAME] => /weekday
+    [SCRIPT_FILENAME] => bin/app.php
+    [PHP_SELF] => /weekday
+    [QUERY_STRING] => year=-2&month=1&day=1
+    [HTTP_HOST] => 127.0.0.1:8080
+    [HTTP_USER_AGENT] => curl/7.84.0
+    [HTTP_ACCEPT] => */*
+    [REQUEST_TIME_FLOAT] => 1680508395.6379
+    [REQUEST_TIME] => 1680508395
+)
+
+

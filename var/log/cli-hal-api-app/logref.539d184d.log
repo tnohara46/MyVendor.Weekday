@@ -1,0 +1,75 @@
+Tue, 04 Apr 2023 01:24:51 +0000
+get app://self/weekday?year=2011&month=05&day=23
+
+Ray\Di\Exception\Unbound(dependency 'MyVendor\Weekday\Resource\App\MyLoggerInterface' with name '' used in /Users/tatsuo/MyVendor.Weekday/src/Resource/App/Weekday.php:13 ($logger))
+ in file /Users/tatsuo/MyVendor.Weekday/vendor/ray/di/src/di/Arguments.php on line 57
+
+#0 /Users/tatsuo/MyVendor.Weekday/vendor/ray/di/src/di/Arguments.php(36): Ray\Di\Arguments->getParameter(Object(Ray\Di\Container), Object(Ray\Di\Argument))
+#1 /Users/tatsuo/MyVendor.Weekday/vendor/ray/di/src/di/NewInstance.php(51): Ray\Di\Arguments->inject(Object(Ray\Di\Container))
+#2 /Users/tatsuo/MyVendor.Weekday/vendor/ray/di/src/di/Dependency.php(75): Ray\Di\NewInstance->__invoke(Object(Ray\Di\Container))
+#3 /Users/tatsuo/MyVendor.Weekday/vendor/ray/di/src/di/Container.php(111): Ray\Di\Dependency->inject(Object(Ray\Di\Container))
+#4 /Users/tatsuo/MyVendor.Weekday/vendor/ray/di/src/di/Container.php(71): Ray\Di\Container->getDependency('MyVendor\\Weekda...')
+#5 /Users/tatsuo/MyVendor.Weekday/vendor/ray/di/src/di/Injector.php(84): Ray\Di\Container->getInstance('MyVendor\\Weekda...')
+#6 /Users/tatsuo/MyVendor.Weekday/vendor/ray/di/src/di/Injector.php(65): Ray\Di\Injector->bind('MyVendor\\Weekda...')
+#7 /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/AppAdapter.php(47): Ray\Di\Injector->getInstance('MyVendor\\Weekda...')
+#8 /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/Factory.php(42): BEAR\Resource\AppAdapter->get(Object(BEAR\Resource\Uri))
+#9 /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/Resource.php(60): BEAR\Resource\Factory->newInstance(Object(BEAR\Resource\Uri))
+#10 /Users/tatsuo/MyVendor.Weekday/vendor/bear/resource/src/Resource.php(80): BEAR\Resource\Resource->newInstance(Object(BEAR\Resource\Uri))
+#11 /Users/tatsuo/MyVendor.Weekday/src/Bootstrap.php(41): BEAR\Resource\Resource->uri('app://self/week...')
+#12 /Users/tatsuo/MyVendor.Weekday/bin/app.php(8): MyVendor\Weekday\Bootstrap->__invoke('cli-hal-api-app', Array, Array)
+#13 {main}
+
+PHP Variables
+
+$_SERVER => Array
+(
+    [MANPATH] => /opt/homebrew/share/man::
+    [TERM_PROGRAM] => Apple_Terminal
+    [PYENV_ROOT] => /Users/tatsuo/.pyenv
+    [SHELL] => /bin/zsh
+    [TERM] => xterm-256color
+    [HOMEBREW_REPOSITORY] => /opt/homebrew
+    [TMPDIR] => /var/folders/0r/lvwfww4x7md10p83zqm2nxtw0000gn/T/
+    [TERM_PROGRAM_VERSION] => 447
+    [VOLTA_HOME] => /Users/tatsuo/.volta
+    [TERM_SESSION_ID] => 257AF4B6-32D1-427E-9DDF-08508CFED52A
+    [USER] => tatsuo
+    [PHPENV_DIR] => /Users/tatsuo/MyVendor.Weekday/bin
+    [PHPENV_HOOK_PATH] => :/Users/tatsuo/.phpenv/phpenv.d:/usr/local/etc/phpenv.d:/etc/phpenv.d:/usr/lib/phpenv/hooks:/Users/tatsuo/.phpenv/plugins/phpenv-aliases/etc/phpenv.d:/Users/tatsuo/.phpenv/plugins/phpenv-composer/etc/phpenv.d
+    [SSH_AUTH_SOCK] => /private/tmp/com.apple.launchd.GQUa7sGpod/Listeners
+    [PATH] => /Users/tatsuo/.phpenv/versions/8.1/bin:/Users/tatsuo/.phpenv/libexec:/Users/tatsuo/.phpenv/plugins/php-build/bin:/Users/tatsuo/.phpenv/plugins/phpenv-aliases/bin:/Users/tatsuo/.phpenv/plugins/phpenv-man/bin:/Users/tatsuo/.pyenv/shims:/Users/tatsuo/.pyenv/bin:/Users/tatsuo/.volta/bin:/Users/tatsuo/.phpenv/shims:/Users/tatsuo/.phpenv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/tatsuo/.volta/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin
+    [LaunchInstanceID] => FE9D6CB8-9079-41A6-B873-2EFA69716488
+    [__CFBundleIdentifier] => com.apple.Terminal
+    [PWD] => /Users/tatsuo/MyVendor.Weekday
+    [LANG] => ja_JP.UTF-8
+    [XPC_FLAGS] => 0x0
+    [XPC_SERVICE_NAME] => 0
+    [PHPENV_VERSION] => 8.1
+    [PYENV_SHELL] => zsh
+    [SHLVL] => 1
+    [HOME] => /Users/tatsuo
+    [PHPENV_ROOT] => /Users/tatsuo/.phpenv
+    [HOMEBREW_PREFIX] => /opt/homebrew
+    [LOGNAME] => tatsuo
+    [INFOPATH] => /opt/homebrew/share/info:
+    [HOMEBREW_CELLAR] => /opt/homebrew/Cellar
+    [SECURITYSESSIONID] => 186b3
+    [__CF_USER_TEXT_ENCODING] => 0x1F5:0x1:0xE
+    [PHP_SELF] => bin/app.php
+    [SCRIPT_NAME] => bin/app.php
+    [SCRIPT_FILENAME] => bin/app.php
+    [PATH_TRANSLATED] => bin/app.php
+    [DOCUMENT_ROOT] => 
+    [REQUEST_TIME_FLOAT] => 1680571491.3528
+    [REQUEST_TIME] => 1680571491
+    [argv] => Array
+        (
+            [0] => bin/app.php
+            [1] => get
+            [2] => /weekday/2011/05/23
+        )
+
+    [argc] => 3
+)
+
+
