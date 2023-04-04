@@ -8,13 +8,15 @@ use BEAR\Resource\ResourceObject;
 use DateTimeImmutable;
 use MyVendor\Weekday\Exception\InvalidDateTime;
 use MyVendor\Weekday\MyLoggerInterface;
+use MyVendor\Weekday\Annotation\BenchMark;
 
 class Weekday extends ResourceObject
 {
     public function __construct(public MyLoggerInterface $logger)
     {
     }
-
+    
+    #[BenchMark]
     public function onGet(int $year, int $month, int $day): static
     {
         $dateTime = DateTimeImmutable::createFromFormat('Y-m-d', "$year-$month-$day");
