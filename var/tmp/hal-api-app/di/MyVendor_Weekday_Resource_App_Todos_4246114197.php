@@ -5,6 +5,7 @@ namespace MyVendor\Weekday\Resource\App;
 use BEAR\Package\Annotation\ReturnCreatedResource;
 use BEAR\RepositoryModule\Annotation\Cacheable;
 use BEAR\Resource\ResourceObject;
+use BEAR\Resource\Todos;
 use Ray\CakeDbModule\Annotation\Transactional;
 use Ray\CakeDbModule\DatabaseInject;
 /**

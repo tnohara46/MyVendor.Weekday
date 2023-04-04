@@ -25,6 +25,7 @@ class Index extends ResourceObject
 }
 */
 ?>
+
 <?php
 namespace MyVendor\Weekday\Resource\Page;
 

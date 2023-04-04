@@ -1,4 +1,4 @@
-Tue, 04 Apr 2023 04:20:44 +0000
+Tue, 04 Apr 2023 08:49:03 +0000
 post app://self/todos?todo=shopping
 
 BEAR\Resource\Exception\ResourceNotFoundException(app://self/todos)
@@ -25,7 +25,7 @@ $_SERVER => Array
     [TMPDIR] => /var/folders/0r/lvwfww4x7md10p83zqm2nxtw0000gn/T/
     [TERM_PROGRAM_VERSION] => 447
     [VOLTA_HOME] => /Users/tatsuo/.volta
-    [TERM_SESSION_ID] => 257AF4B6-32D1-427E-9DDF-08508CFED52A
+    [TERM_SESSION_ID] => 0C06ABF8-982D-4F0B-98D7-6AFA9783463C
     [USER] => tatsuo
     [PHPENV_DIR] => /Users/tatsuo/MyVendor.Weekday/bin
     [PHPENV_HOOK_PATH] => :/Users/tatsuo/.phpenv/phpenv.d:/usr/local/etc/phpenv.d:/etc/phpenv.d:/usr/lib/phpenv/hooks:/Users/tatsuo/.phpenv/plugins/phpenv-aliases/etc/phpenv.d:/Users/tatsuo/.phpenv/plugins/phpenv-composer/etc/phpenv.d
@@ -53,8 +53,8 @@ $_SERVER => Array
     [SCRIPT_FILENAME] => bin/test.php
     [PATH_TRANSLATED] => bin/test.php
     [DOCUMENT_ROOT] => 
-    [REQUEST_TIME_FLOAT] => 1680582044.1847
-    [REQUEST_TIME] => 1680582044
+    [REQUEST_TIME_FLOAT] => 1680598143.0047
+    [REQUEST_TIME] => 1680598143
     [argv] => Array
         (
             [0] => bin/test.php
